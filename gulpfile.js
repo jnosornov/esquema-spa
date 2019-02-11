@@ -40,6 +40,12 @@ function cloneFiles() {
     .pipe(browsersync.stream())
 }
 
+function cloneAssets() {
+  return gulp
+    .src('./app/src/assets/*')
+    .pipe(gulp.dest('./dist/assets'))
+}
+
 function cleanFiles() {
   return del(['./dist/**/*'])
 }
@@ -73,7 +79,7 @@ function watchFiles(done) {
 }
 
 // > define tasks order execution
-const build = gulp.series(cleanFiles, gulp.parallel(styles, scripts, cloneFiles))
+const build = gulp.series(cleanFiles, gulp.parallel(styles, scripts, cloneFiles, cloneAssets))
 const watch = gulp.parallel(watchFiles, browserSync)
 
 module.exports = {
