@@ -24,6 +24,19 @@
 .navbar {
   padding: 0.8rem 1rem;
 }
+.navbar-light .navbar-brand {
+  font-family: 'Permanent Marker', cursive; 
+  font-size: 35px;
+  &:hover {
+    color: $downy;
+  }
+}
+.navbar-nav .nav-item .nav-link {
+  border-bottom: 3px solid transparent;
+  &:hover {
+    border-bottom: 3px solid $blue-chill;
+  }
+}
 
 /* Home */
 .home {
@@ -129,7 +142,8 @@
 
 /* Services */
 .services {
-  padding: 100px;
+  padding-top: 120px;
+  padding-bottom: 80px;
   .title {
     font-family: 'Raleway', 'sans-serif';
     font-weight: 600;
