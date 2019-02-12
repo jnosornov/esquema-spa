@@ -1,40 +1,9 @@
-$white: #ffffff;
-$blue-chill: #0db7c4;
-$downy: #5cc9c1;
-$plantation: #27605b;
-$sirocco: #898f8f;
-$dove-gray: #666666;
-$blumine: #164d61;
-$limed-spruce: #455a64;
-
-$theme-colors: (
-  'white': #ffffff,
-  'blue-chill': #0db7c4,
-  'downy': #5cc9c1,
-  'plantation': #27605b,
-  'sirocco': #898f8f,
-  'dove-gray': #666666,
-  'blumine': #164d61,
-  'limed-spruce': #455a64,
-);
-
-/* Button styles */
-$btn-border-radius-lg: 0px;
-$btn-padding-y-lg: 10px;
-$btn-padding-x-lg: 50px;
-$btn-border-width: 3px;
-
-
-@import "node_modules/bootstrap/scss/bootstrap";
+@import './palette.scss';
 
 .svg {
   filter: invert(1);
   min-width: 20px;
   height: auto;
-}
-
-.slider {
-
 }
 
 /* Global styles */
@@ -65,9 +34,6 @@ $btn-border-width: 3px;
     top: 0; left: 0;
     width: 100%; height: 100%;
   }
-  .home-quote {
-    margin: 40px 0px;
-  }
   .home-header {
     display: inline-block;
     border-top: 4px solid $white;
@@ -83,6 +49,27 @@ $btn-border-width: 3px;
       font-size: 30px;
     }
   }
+  .home-quote {
+    margin: 40px 0px;
+  }
+}
+
+/* carousel */
+.slider {
+  width: 150px;
+  margin-top: 40px;
+  position: relative;
+  .controls .arrows {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    .svg { width: 30px; height: auto; }
+    .arrow-left { float: left; }
+    .arrow-right { float: right; }
+  }
+  // .controls .items {
+  //   border: 2px solid yellow;
+  // }
 }
 
 .main-title {
