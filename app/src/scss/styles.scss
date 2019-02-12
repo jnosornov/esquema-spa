@@ -16,6 +16,11 @@
   align-items: center;
 }
 
+/* Navbar */
+.navbar {
+  padding: 0.8rem 1rem;
+}
+
 /* Home */
 .home {
   background-image: url('../assets/home-bg.jpg');
@@ -25,11 +30,12 @@
 }
 
 .home {
-  padding: 150px;
   color: $white;
+  padding: 150px;
   position: relative;
+  border-bottom: 4px solid $downy;
   .layer {
-    background-color: rgba(0,0,0,.6);
+    background-color: rgba(0,0,0,.7);
     position: absolute;
     top: 0; left: 0;
     width: 100%; height: 100%;
@@ -70,6 +76,44 @@
   // .controls .items {
   //   border: 2px solid yellow;
   // }
+}
+
+/* global collapse */
+.global-collapse-wrapper {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  position: absolute;
+  bottom: -190px; right: 50%;
+  transform: translateX(50%);
+  background-color: rgba(255,255,255,.4);
+  .global-collapse {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    position: absolute;
+    right: 50%; top: 50%;
+    transform: translate(50%, -50%);
+    background-color: $plantation;
+    border: 2px solid $downy;
+  }
+}
+
+.global-collapse {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  .arrow-down { 
+    height: 30px;
+    position: absolute;
+  }
+  .minus { 
+    width: 8px;
+    position: absolute;
+    bottom: 5px;
+  }
 }
 
 .main-title {
