@@ -50,6 +50,12 @@ function cleanFiles() {
   return del(['./dist/**/*'])
 }
 
+function iconSet() {
+  return gulp
+    .src('./node_modules/typicons.font/src/svg/*.svg')
+    .pipe(gulp.dest('./dist/assets/icons'))
+}
+
 function styles() {
   return gulp
     .src(['./app/src/scss/**/*.scss'])
@@ -79,7 +85,7 @@ function watchFiles(done) {
 }
 
 // > define tasks order execution
-const build = gulp.series(cleanFiles, gulp.parallel(styles, scripts, cloneFiles, cloneAssets))
+const build = gulp.series(cleanFiles, gulp.parallel(styles, scripts, cloneFiles, cloneAssets), iconSet)
 const watch = gulp.parallel(watchFiles, browserSync)
 
 module.exports = {

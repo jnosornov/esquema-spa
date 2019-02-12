@@ -27,6 +27,16 @@ $btn-border-width: 3px;
 
 @import "node_modules/bootstrap/scss/bootstrap";
 
+.svg {
+  filter: invert(1);
+  min-width: 20px;
+  height: auto;
+}
+
+.slider {
+
+}
+
 /* Global styles */
 
 /* Section Content */
