@@ -210,6 +210,7 @@
   .content-header {
     display: inline-flex;
     justify-content: center;
+    align-items: center;
     .content-title {
       font-family: 'Raleway', 'sans-serif';
       font-weight: 500;
@@ -219,7 +220,7 @@
     }
     .flow-children-svg {
       height: 100%;
-      margin-left: .4rem;
+      margin-left: .6rem;
     }
   }
   .content-description {
