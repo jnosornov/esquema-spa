@@ -52,9 +52,32 @@ function cleanFiles() {
 
 function iconSet() {
   return gulp
-    .src('./node_modules/typicons.font/src/svg/*.svg')
+    .src('./app/src/assets/icons/*.svg')
     .pipe(gulp.dest('./dist/assets/icons'))
 }
+
+// Optimize Images
+// function images() {
+//   return gulp
+//     .src("./app/src/assets/**/*")
+//     .pipe(newer("./_site/assets/img"))
+//     .pipe(
+//       imagemin([
+//         imagemin.gifsicle({ interlaced: true }),
+//         imagemin.jpegtran({ progressive: true }),
+//         imagemin.optipng({ optimizationLevel: 5 }),
+//         imagemin.svgo({
+//           plugins: [
+//             {
+//               removeViewBox: false,
+//               collapseGroups: true
+//             }
+//           ]
+//         })
+//       ])
+//     )
+//     .pipe(gulp.dest("./_site/assets/img"));
+// }
 
 function styles() {
   return gulp

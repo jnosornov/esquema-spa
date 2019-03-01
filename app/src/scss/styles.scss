@@ -11,7 +11,7 @@
 }
 
 .downy-svg { filter: invert(91%) sepia(85%) saturate(6791%) hue-rotate(150deg) brightness(83%) contrast(86%); }
-.plantation-svg { filter: invert(32%) sepia(5%) saturate(4251%) hue-rotate(126deg) brightness(96%) contrast(92%); }
+.plantation-svg { filter: invert(30%) sepia(11%) saturate(1971%) hue-rotate(126deg) brightness(98%) contrast(87%); }
 
 .common-paragraph {
   font-family: 'Raleway', 'sans-serif';
@@ -215,6 +215,11 @@
       font-weight: 500;
       font-size: 24px;
       color: $plantation;
+      margin-bottom: 0;
+    }
+    .flow-children-svg {
+      height: 100%;
+      margin-left: .4rem;
     }
   }
   .content-description {
