@@ -249,3 +249,64 @@
   // font-family: 'Raleway', sans-serif;
   font-family: 'Open Sans', sans-serif;
 }
+
+// FIX ME: is there a way to improve this code.
+#pills-marketing {
+  #collapseMarketing.collapse:not(.show) {
+    display: block;
+    /* height = lineheight * no of lines to display */
+    // height: 4.5em;
+    height: 7.4em;
+    overflow: hidden;
+  }
+  
+  #collapseMarketing.collapsing {
+    // height: 4.5em;
+    height: 7.4em;
+  }
+}
+
+#pills-advertising {
+  #collapseAdvertising.collapse:not(.show) {
+    display: block;
+    /* height = lineheight * no of lines to display */
+    // height: 4.5em;
+    height: 7.4em;
+    overflow: hidden;
+  }
+  
+  #collapseAdvertising.collapsing {
+    // height: 4.5em;
+    height: 7.4em;
+  }
+}
+
+#pills-cloud-storage {
+  #collapseCloudStorage.collapse:not(.show) {
+    display: block;
+    /* height = lineheight * no of lines to display */
+    // height: 4.5em;
+    height: 7.4em;
+    overflow: hidden;
+  }
+  
+  #collapseCloudStorage.collapsing {
+    // height: 4.5em;
+    height: 7.4em;
+  }
+}
+
+#pills-consulting {
+  #collapseConsulting.collapse:not(.show) {
+    display: block;
+    /* height = lineheight * no of lines to display */
+    // height: 4.5em;
+    height: 7.4em;
+    overflow: hidden;
+  }
+  
+  #collapseConsulting.collapsing {
+    // height: 4.5em;
+    height: 7.4em;
+  }
+}
